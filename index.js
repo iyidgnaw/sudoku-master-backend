@@ -6,6 +6,8 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+app.use(cors());
+
 app.get("/api/store", async (req, res) => {
   console.log(req.query.key);
 
